@@ -40,6 +40,8 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 
 [node name="Game" type="Node2D"]
 
+[node name="Navigation2D" type="Navigation2D" parent="."]
+
 [node name="Player_Container" type="Node2D" parent="."]
 script = ExtResource( 12 )
 
