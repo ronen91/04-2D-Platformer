@@ -2,9 +2,9 @@ extends KinematicBody2D
 
 onready var SM = $StateMachine
 
-export var walking = 500
+export var walking = 250
 export var running = 1000
-export var path = [Vector2(4100,1120), Vector2(5250,1120)]
+export var path = [Vector2(1400,390), Vector2(2000,390)]
 var velocity = Vector2.ZERO
 var direction = -1
 

@@ -33,6 +33,8 @@ func _physics_process(_delta):
 		if direction > 0 and $AnimatedSprite.flip_h: 
 			$AnimatedSprite.flip_h = false
 			$Attack.cast_to.x = abs($Attack.cast_to.x)
+	if global_position.y > 2000:
+		queue_free()
 	
 	if is_on_floor():
 		double_jumped = false
@@ -75,3 +77,10 @@ func die():
 func _on_AnimatedSprite_animation_finished():
 	if $AnimatedSprite.animation == "Attacking":
 		SM.set_state("Idle")
+
+
+
+
+func _on_Coin_Collector_body_entered(body):
+	if body.name == "Coins":
+		body.get_coin(global_position)

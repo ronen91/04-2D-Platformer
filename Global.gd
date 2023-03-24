@@ -1,5 +1,9 @@
 extends Node
 
+var score = 0
+var lives = 3
+var level = 3
+
 var fade = null
 var fade_speed = 0.015
 

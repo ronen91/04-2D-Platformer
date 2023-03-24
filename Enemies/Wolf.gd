@@ -4,7 +4,7 @@ onready var SM = $StateMachine
 
 export var walking = 300
 export var running = 300
-export var jump = 1200
+export var jump = 1000
 var velocity = Vector2.ZERO
 var direction = -1
 

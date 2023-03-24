@@ -300,7 +300,7 @@ position = Vector2( -17.9687, -6.99999 )
 scale = Vector2( 4.28125, 4.1875 )
 frames = SubResource( 106 )
 animation = "Move"
-frame = 2
+frame = 4
 offset = Vector2( 7, 0 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
